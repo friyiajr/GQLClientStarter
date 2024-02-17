@@ -6,16 +6,23 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "compile": "graphql-codegen",
+    "watch": "graphql-codegen -w"
   },
   "dependencies": {
+    "@apollo/client": "^3.9.5",
     "expo": "~50.0.6",
     "expo-status-bar": "~1.11.1",
+    "graphql": "^16.8.1",
     "react": "18.2.0",
     "react-native": "0.73.4"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
+    "@graphql-codegen/cli": "^5.0.2",
+    "@graphql-codegen/client-preset": "^4.2.2",
+    "@parcel/watcher": "^2.4.0",
     "@types/react": "~18.2.45",
     "typescript": "^5.1.3"
   },
